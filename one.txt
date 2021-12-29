@@ -1,0 +1,34 @@
+const fs= require("fs");
+
+fs.writeFile("one.txt","success",()=>{
+
+    console.log("working")
+})
+
+fs.appendFile("one.txt"," second",()=>{
+
+
+    console.log("working")
+})
+
+fs.readFile("one.txt","utf-8",(err,data)=>{
+
+
+    console.log(data);
+})
+
+fs.mkdir("temp",()=>{
+    console.log("dnj");
+})
+
+
+fs.writeFile("temp/one.txt","ooo la ",()=>{
+
+    console.log("working");
+})
+
+fs.rmdir("temp",()=>{
+
+    console.log("success");
+})
+
